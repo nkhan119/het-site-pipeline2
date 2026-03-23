@@ -1,27 +1,17 @@
-# Nextflow work directory
-work/
-.nextflow/
-.nextflow.log*
-
-# Results
-results/
-
-# Data — never commit genomic files
+Cohort_*/
 *.gvcf.gz
 *.gvcf.gz.tbi
 *.bam
 *.bai
+results/
+work/
+logs/
+.nextflow/
+.nextflow.log*
 *.parquet
 *.pdf
-
-# Logs
-logs/
-
-# Python
 __pycache__/
 *.py[cod]
 .env
-
-# OS
 .DS_Store
 Thumbs.db
