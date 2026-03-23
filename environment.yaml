@@ -1,0 +1,13 @@
+name: het-site-pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - nextflow>=23.0
+  - bcftools>=1.17
+  - pandas>=2.0
+  - pyarrow>=12.0
+  - matplotlib>=3.7
+  - seaborn>=0.12
