@@ -1,17 +1,31 @@
+# Input data — never commit genomic files
 Cohort_*/
 *.gvcf.gz
 *.gvcf.gz.tbi
 *.bam
 *.bai
+
+# Pipeline outputs
 results/
 work/
 logs/
+
+# Nextflow internals
 .nextflow/
 .nextflow.log*
+
+# Large outputs
 *.parquet
 *.pdf
+
+# Python
 __pycache__/
 *.py[cod]
 .env
+
+# OS
 .DS_Store
 Thumbs.db
+
+# This script
+add_github.sh
