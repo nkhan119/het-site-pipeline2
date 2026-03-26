@@ -12,25 +12,12 @@
 # ============================================================
 # het-site-pipeline2 — Nextflow SLURM submission script
 #
-# Fixes:
-#   - Removed -dry-run (not a valid Nextflow flag)
-#   - Added NXF_DISABLE_CHECK_LATEST=true to prevent
-#     Nextflow from trying to reach nextflow.io (blocked on Narval)
-#
 # Submit with:
 #   sbatch submit_nextflow.sh
-#
-# Submit with custom cohorts:
-#   COHORTS="Cohort_A,Cohort_B,Cohort_C" sbatch submit_nextflow.sh
 # ============================================================
 
 set -euo pipefail
 
-# ── Load Java ─────────────────────────────────────────────────
-module load java/21.0.1
-
-# ── Disable internet check (Narval blocks outbound HTTPS) ─────
-export NXF_DISABLE_CHECK_LATEST=true
 
 cd $SLURM_SUBMIT_DIR
 mkdir -p logs/slurm results
