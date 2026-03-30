@@ -127,3 +127,10 @@ nextflow run main.nf -profile slurm --min_dp 30 --min_gq 40
 | Reports | benchmark TSV | HTML report + timeline + trace |
 | Config | `config.yaml` | `nextflow.config` + profiles |
 | SLURM | `--executor slurm` | `-profile slurm` |
+
+
+## Citation / Reuse
+If you use or adapt this pipeline, please credit the author.
+
+## Author
+Nadeem Khan, PhD Bioinformatician — INRS–Centre Armand-Frappier Santé-Biotechnologie, Laval, QC, Canada nkhan119@uottawa.ca @nkhan119
